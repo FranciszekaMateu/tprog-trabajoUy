@@ -57,82 +57,81 @@ La letra completa y detallada de esta tarea esta [aqui](https://github.com/Franc
 ## Distribución y arquitectura final
 ![Distribucion](./docs/distribucion.png)
 
-## Instalación y Uso
-Crear un README efectivo para tu aplicación en GitHub es una excelente manera de guiar a los usuarios a través del proceso de instalación. Aquí te proporciono un ejemplo de cómo podría estructurarse:
 
----
 
-# Nombre de Tu Aplicación
+### Instalación y Uso
 
-Breve descripción de lo que hace tu aplicación.
+A continuación se detallan los pasos para instalar y ejecutar los servidores frontend y backend de la aplicación.
 
-## Comenzando
+#### Paso 1: Clonar el Repositorio
 
-Estas instrucciones te proporcionarán una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+Primero, clona el repositorio desde GitHub:
 
-### Prerrequisitos
-
-Lo que necesitas para instalar el software y cómo instalarlos.
-
-```
-Ejemplo: Node.js, Python 3.6, etc.
-```
-
-### Instalación y uso
-
-Estos son los pasos para hacer correr el servidor frontend y backend.
-
-#### Paso 1: Clonar el repositorio
-
-```
+```bash
 git clone https://github.com/FranciszekaMateu/tprog-trabajoUy.git
 ```
 
-#### Paso 2: Instalar java y maven
-En ubuntu
+#### Paso 2: Instalar Java y Maven
+
+##### En Ubuntu
+
+Para instalar Maven:
+
+```bash
+sudo apt install maven
 ```
-apt install maven
-```
-En caso de no tener java:
-```
+
+Si no tienes Java, instálalo así:
+
+```bash
 sudo apt install openjdk-11-jdk
 ```
-En arch:
-```
-pacman -S maven
-```
-[Guia para windows](https://dev.to/vanessa_corredor/instalar-manualmente-maven-en-windows-10-50pb)
-#### Paso 3: Dar permisos
 
+##### En Arch Linux
+
+Para instalar Maven:
+
+```bash
+sudo pacman -S maven
 ```
-cd tprog-trabajoUy
-cd Tarea3
-cd Deploy
+
+Consulta la [Guía para instalar Maven en Windows](https://dev.to/vanessa_corredor/instalar-manualmente-maven-en-windows-10-50pb) si estás utilizando ese sistema operativo.
+
+#### Paso 3: Dar Permisos de Ejecución
+
+Navega al directorio `Deploy` y otorga permisos de ejecución a los scripts:
+
+```bash
+cd tprog-trabajoUy/Tarea3/Deploy
+chmod +x generarSwing.sh generarWeb.sh levantarSwing.sh levantarWeb.sh
 ```
-Ahora le damos permisos a los .sh 
+
+#### Paso 4: Ejecutar la Aplicación
+
+Ejecuta los scripts en el siguiente orden:
+
+```bash
+./generarSwing.sh
+./generarWeb.sh
+./levantarSwing.sh
 ```
-chmod +x generarSwing.sh
-chmod +x generarWeb.sh
-chmod +x levantarSwing.sh
-chmod +x levantarWeb.sh
-```
-#### Paso 4: Ejecutar la aplicación
-Ahora ejectuamos en orden:
-```
-./generarSwing
-./generarWeb
-./levantarSwing
-```
-Ahora tenemos que modifcar el settings.properties de la carpeta anterior
-con el link de nuestro servidor.Si vas a correr los dos servidores en la misma maquina la ip va a ser localhost y si es local usa la ip local.
-```
+
+Luego, actualiza el archivo `settings.properties` con la dirección de tu servidor. Si estás ejecutando ambos servidores en la misma máquina, usa `localhost`. Para una red local, utiliza la IP local.
+
+```bash
 cd ..
-echo "http://<aquiladireccionip>:8080/trabajouy/home" > settings.properties
+echo "http://<tu_direccion_ip>:8080/trabajouy/home" > settings.properties
 ```
-Despues levantamos la web:
-```
+
+Reemplaza `<tu_direccion_ip>` con la dirección IP correspondiente.
+
+Finalmente, levanta el servidor web:
+
+```bash
 ./levantarWeb.sh
 ```
+
+
 
 
 
