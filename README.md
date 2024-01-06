@@ -49,6 +49,9 @@ Este proyecto, realizado durante el segundo semestre de 2023, fue un esfuerzo co
 ## Diagrama de Dominio
 ![Diagrama de dominio](./docs/digModel.png)
 
+## Distribución y arquitectura final
+![Distribucion](./docs/distribucion.png)
+
 ## Instalación y Uso
 
 
