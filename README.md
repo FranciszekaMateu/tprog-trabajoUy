@@ -58,6 +58,61 @@ La letra completa y detallada de esta tarea esta [aqui](https://github.com/Franc
 ![Distribucion](./docs/distribucion.png)
 
 ## Instalación y Uso
+Crear un README efectivo para tu aplicación en GitHub es una excelente manera de guiar a los usuarios a través del proceso de instalación. Aquí te proporciono un ejemplo de cómo podría estructurarse:
+
+---
+
+# Nombre de Tu Aplicación
+
+Breve descripción de lo que hace tu aplicación.
+
+## Comenzando
+
+Estas instrucciones te proporcionarán una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+### Prerrequisitos
+
+Lo que necesitas para instalar el software y cómo instalarlos.
+
+```
+Ejemplo: Node.js, Python 3.6, etc.
+```
+
+### Instalación y uso
+
+Estos son los pasos para hacer correr el servidor frontend y backend.
+
+#### Paso 1: Clonar el repositorio
+
+```
+git clone https://github.com/FranciszekaMateu/tprog-trabajoUy.git
+```
+
+#### Paso 2: Instalar maven
+En ubuntu
+```
+apt install maven
+```
+En arch:
+```
+pacman -S maven
+```
+#### Paso 3: Dar permisos
+
+```
+cd tprog-trabajoUy
+cd Tarea3
+cd Deploy
+```
+Ahora le damos permisos a los .sh 
+#### Paso 4: Ejecutar la aplicación
+
+```
+npm start
+```
+
+
+
 
 
 
