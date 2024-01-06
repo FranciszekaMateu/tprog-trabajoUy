@@ -16,6 +16,7 @@ Este proyecto, realizado durante el segundo semestre de 2023, fue un esfuerzo co
 - **Funcionales:** Gestión de usuarios y ofertas, búsqueda y filtrado.
 - **Especiales:** Pruebas con JUnit, diseño GUI con Swing.
 - **Tecnologías:** Java, Swing, JUnit, Git.
+La letra completa y detallada de esta tarea esta [aqui](https://github.com/FranciszekaMateu/tprog-trabajoUy/blob/main/docs/Tarea1_2023-v1.1.pdf)
 
 ## Tarea 2: Desarrollo de Aplicación Web
 ### Objetivos
@@ -30,6 +31,8 @@ Este proyecto, realizado durante el segundo semestre de 2023, fue un esfuerzo co
 - **Funcionales:** Modificaciones al sistema existente, implementación de autenticación.
 - **Especiales:** Diseño web, validación cliente, pruebas automáticas.
 - **Tecnologías:** HTML5, CSS, JavaScript, JSP, Servlets, Java EE, Tomcat.
+- 
+La letra completa y detallada de esta tarea esta [aqui](https://github.com/FranciszekaMateu/tprog-trabajoUy/blob/main/docs/Tarea2_2023_v1.0.pdf)
 
 ## Tarea 3: Mejoras y Nuevas Funcionalidades
 ### Objetivos
