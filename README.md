@@ -88,15 +88,20 @@ Estos son los pasos para hacer correr el servidor frontend y backend.
 git clone https://github.com/FranciszekaMateu/tprog-trabajoUy.git
 ```
 
-#### Paso 2: Instalar maven
+#### Paso 2: Instalar java y maven
 En ubuntu
 ```
 apt install maven
+```
+En caso de no tener java:
+```
+sudo apt install openjdk-11-jdk
 ```
 En arch:
 ```
 pacman -S maven
 ```
+[Guia para windows](https://dev.to/vanessa_corredor/instalar-manualmente-maven-en-windows-10-50pb)
 #### Paso 3: Dar permisos
 
 ```
@@ -105,13 +110,29 @@ cd Tarea3
 cd Deploy
 ```
 Ahora le damos permisos a los .sh 
+```
+chmod +x generarSwing.sh
+chmod +x generarWeb.sh
+chmod +x levantarSwing.sh
+chmod +x levantarWeb.sh
+```
 #### Paso 4: Ejecutar la aplicación
-
+Ahora ejectuamos en orden:
 ```
-npm start
+./generarSwing
+./generarWeb
+./levantarSwing
 ```
-
-
+Ahora tenemos que modifcar el settings.properties de la carpeta anterior
+con el link de nuestro servidor.Si vas a correr los dos servidores en la misma maquina la ip va a ser localhost y si es local usa la ip local.
+```
+cd ..
+echo "http://<aquiladireccionip>:8080/trabajouy/home" > settings.properties
+```
+Despues levantamos la web:
+```
+./levantarWeb.sh
+```
 
 
 
